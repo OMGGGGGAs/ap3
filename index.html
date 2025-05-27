@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sean's Biography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #2a4d73;
+      --accent-color: #007BFF;
+      --text-color: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('paddington-bus.webp') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      padding: 15px 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--primary-color);
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      color: var(--text-color);
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    main {
+      padding: 140px 20px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .content-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      max-width: 700px;
+      text-align: center;
+      animation: slideIn 1s ease-out forwards;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .logo { font-size: 1.5rem; }
+      h1 { font-size: 2.2rem; }
+      p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">AP 3</div>
+      <div class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="karakter.html">⭐ Favorite Character</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Hey, I'm Sean!</h1>
+    <div class="content-box">
+      <p>I'm 13, born on October 12. I absolutely love Paddington he's the cutest bear ever! 🧸</p>
+      <p>You'll usually find me playing basketball, football, or honestly any game that involves a ball. Ball is life ballin' forever 🤛🤛</p>
+      <p>Sending good vibes always. Love y’all ❤️❤️ Mamba out 🐍⚫</p> <img src="WIN_20230811_08_42_14_Pro.jpg" lengtht="420px" width="420px">
+      <p>These are my favorite basketball players</p>
+      <ul>
+        <li>Nikola Jokic (The Joker and za GOAT)</li>
+        <li>Stephen Curry (The Chef of 3ptrs)</li>
+        <li>Bronny James (Simply Class)</li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
